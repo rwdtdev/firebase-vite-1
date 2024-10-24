@@ -1,7 +1,6 @@
 import "./App.css";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
-
 const firebaseConfig = {
   apiKey: "AIzaSyAT46IRXyLHS-mjinIPIGL_VQSE-Xkx70I",
   authDomain: "test-1-6a94b.firebaseapp.com",
@@ -47,6 +46,13 @@ function App() {
         }}
       >
         read data from firestore
+      </button>
+      <button
+        onClick={() => {
+          console.log(import.meta.env.MODE);
+        }}
+      >
+        show env
       </button>
     </>
   );
