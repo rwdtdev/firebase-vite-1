@@ -25,7 +25,7 @@ function App() {
         onClick={async () => {
           try {
             const docRef = await addDoc(collection(db, "users"), {
-              first2: "Ada2",
+              first: "Ada2",
               last: "Lovelace2",
               born: 1812,
             });
